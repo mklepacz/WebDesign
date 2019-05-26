@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box; 
   }
+  body{
+    background-color: rgb(177, 228, 119);
+  } 
 
 @media (min-width:320px) {  
 

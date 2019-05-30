@@ -4,8 +4,34 @@
     box-sizing: border-box; 
   }
   body{
-    background-color: rgb(177, 228, 119);
+    background-color: #0cc51b;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
   } 
+  h1{
+    font-family: 'Playfair Display', serif;
+  }
+  nav a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  button{
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  h2, h3{
+    text-transform: uppercase;
+  }
+  #home{
+    background: url(../img/background.jpg) no-repeat left top;
+    background-size: cover;
+  }
+  .about{
+    color: #000000;
+  }
+  .item_gallery p, .item_about ul li, .item_about p{
+    font-style: italic;
+  }
 
 @media (min-width:320px) {  
 

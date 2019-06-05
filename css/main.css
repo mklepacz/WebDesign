@@ -32,14 +32,13 @@
   #home{
     background: url("../img/background.jpg") no-repeat center;
     background-size: cover;
-    height: 100vh;
+    height: auto;
     width: 100%;
     display: flex;
     padding: 0px 15px 0px 15px;
     flex-direction: column;
  }
  .head{
-   position: relative;
    display: flex;
    flex-direction: row;
    align-items: center;
@@ -59,9 +58,10 @@
  }
  .baner{
    display: flex;
+   height: 100%;
    flex-direction: column;
    align-items: center;
-   justify-content: space-around;
+   justify-content: space-between;
    text-align: center;
    padding: 0px 10px;
  }
@@ -70,15 +70,14 @@
    margin-top: 80px;
  }
  .baner p{
-  font-size: .8em;
+  font-size: .7em;
   margin-top: 10px;
   padding: 0px 20px;
-  line-height: 1.7;
-  text-align: center;
+  line-height: 1.4;
 }
 .button{
   position: relative;
-  margin-top: 20px;
+  margin-top: 40px;
   border: none;
   color: white;
   text-align: center;
@@ -104,14 +103,84 @@ button::after{
   background-color:#da7074;
   z-index: -1;
 }
+.baner_lines{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  position: relative;
+}
+.line_1, .line_2{
+  width: 1px;
+  height: 80px;
+  background-color:#da7074;
+}
+.line_1{
+  margin: 10px 1px 0px 1px;
+}
+.line_2{
+  margin: 15px 1px 0px 1px;
+}
 .play{
   cursor: pointer;
-  margin-top: 80px;
+  margin: 40px 0px 10px 0px;
   background: url("../img/play.png") 16px center no-repeat;
   width: 60px;
   height: 60px;
   border: 2px solid #ffffff;
   border-radius: 50px;
+}
+.gallery{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.item_gallery{
+  position: relative;
+  text-align: center;
+  color: #ffffff;
+}
+.item_gallery img{
+  width: 100%;
+}
+.gallery_text_container{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.about{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.item_about{
+
+  margin-top: 30px;
+  flex-basis: 80%;
+}
+.item_about h2{
+  font-family: Montserrat;
+  font-size: 1em;
+}
+.item_about ul{
+  font-family: Georgia;
+  color:#575757;
+  line-height: 1.9em;
+  margin-top: 20px;
+  list-style: none;
+  font-size: .8em;
+}
+.item_about p{
+  color:#575757;
+  font-family: Georgia;
+  line-height: 1.9em;
+  margin-top: 20px;
+  font-size: .8em;
+}
+
 }
 @media (min-width:480px) { 
   

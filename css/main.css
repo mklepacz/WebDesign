@@ -32,8 +32,10 @@
   #home{
     background: url("../img/background.jpg") no-repeat center;
     background-size: cover;
-    height: auto;
+    height: 100vh;
+    min-height: 600px;
     width: 100%;
+    font-size: 16px;
     display: flex;
     padding: 0px 15px 0px 15px;
     flex-direction: column;
@@ -63,16 +65,15 @@
    align-items: center;
    justify-content: space-between;
    text-align: center;
-   padding: 0px 10px;
  }
  .baner h1{
-   font-size: 3.3em;
+   font-size: 14vw;
    margin-top: 80px;
  }
  .baner p{
-  font-size: .7em;
+  font-size: 3.4vw;
   margin-top: 10px;
-  padding: 0px 20px;
+  padding: 0px 10%;
   line-height: 1.4;
 }
 .button{
@@ -169,7 +170,7 @@ button::after{
   font-family: Georgia;
   color:#575757;
   line-height: 1.9em;
-  margin-top: 20px;
+  margin: 20px 0px;
   list-style: none;
   font-size: .8em;
 }
@@ -180,8 +181,23 @@ button::after{
   margin-top: 20px;
   font-size: .8em;
 }
-
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 1);
+  height: 96px;
+  margin: 20px 0px 0px 0px;
 }
+footer p{
+  color: rgba(255, 255, 255, 0.685);
+  font-family: Georgia;
+  font-size: 12px;
+  font-style: italic;
+}
+
+
 @media (min-width:480px) { 
   
  }

@@ -92,6 +92,7 @@
   font-weight: 700;
   border-radius: 20px;
   z-index: 2;
+  transition: background-color .2s ease;
 }
 button::after{
   position: absolute;
@@ -130,6 +131,11 @@ button::after{
   height: 60px;
   border: 2px solid #ffffff;
   border-radius: 50px;
+  transition: .5s ease;
+}
+.play:hover{
+  border: 2px solid #da7074;
+  background-color: #da7074;
 }
 .gallery{
   display: flex;
@@ -140,25 +146,36 @@ button::after{
 .item_gallery{
   position: relative;
   text-align: center;
+  
+}
+.item_gallery a{
   color: #ffffff;
+  text-decoration: none;
+}
+.item_gallery a:hover .gallery_text_container{
+  font-size: 1.1em;
+  transition: .3s ease;
 }
 .item_gallery img{
   width: 100%;
 }
 .gallery_text_container{
   position: absolute;
+  width: 100%;
   top: 70%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-size: 1em;
+  transition: .3s ease;
 }
 .about{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  cursor: pointer;
 }
 .item_about{
-
   margin-top: 30px;
   flex-basis: 80%;
 }
@@ -168,14 +185,20 @@ button::after{
 }
 .item_about ul{
   font-family: Georgia;
-  color:#575757;
   line-height: 1.9em;
   margin: 20px 0px;
   list-style: none;
   font-size: .8em;
 }
-.item_about p{
+.item_about ul li{
   color:#575757;
+  transition: .7s ease;
+}
+.item_about ul li:hover{
+  color:#181818;
+  transition: .7s ease;
+}
+.item_about p{
   font-family: Georgia;
   line-height: 1.9em;
   margin-top: 20px;
@@ -196,6 +219,10 @@ footer p{
   font-size: 12px;
   font-style: italic;
 }
+.heartbeat{
+  color: #da7074;
+  animation: heartbeat 5s ease infinite;
+ }
 
 }
 @media (min-width:480px) { 
@@ -215,10 +242,6 @@ footer p{
  }
 
  /*Animation*/
- .heartbeat{
-  color: #da7074;
-  animation: heartbeat 5s ease infinite;
- }
 @keyframes heartbeat {
   0% {
     transform:scale(1);

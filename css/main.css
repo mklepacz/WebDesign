@@ -50,7 +50,7 @@
    height: 1px;
    background: rgba(255, 255, 255, 0.685); 
  }
- a:nth-child(2){
+ .head a:nth-child(2){
    margin-left: auto;
    margin-right: 10px;
  }
@@ -278,27 +278,92 @@ footer p{
  }
 @media (min-width:600px) { 
   #home{
-    padding: 0px 45px 0px 45px;
+    padding: 0px 45px;
   }
   .baner{
-    padding: 0px 55px 0px 55px;
+    padding: 0px 55px;
   }
   .baner h1{
     font-size: 11vw;
-    margin-top: 80px;
   }
   .baner p{
    font-size: 1.8vw;
+   padding: 0px 120px;
   }
  }
 @media (min-width:801px) { 
-  
+  .baner{
+    padding: 0px 85px;
+  }
+  .baner h1{
+    font-size: 10vw;
+  }
+  .baner p{
+   font-size: 1.5vw;
+  }
+  .item_about{
+    flex-basis: 33%;
+  }
+  .item_about:nth-child(4){
+    flex-basis: 100%;
+  }
  }
 @media (min-width:1025px) { 
-  
+  .head a:nth-child(2){
+    margin: 0px 20px 0px 0px;
+  }
+  .head a:first-child{
+    order:-1;
+  }
+  nav{
+    margin: 0px auto;
+    display: flex;
+    order: -1;
+  }
+  nav a{
+    cursor: pointer;
+    text-transform: uppercase;
+    margin: 0px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
+  .baner_container{
+    max-width: 740px;
+  }
+  .baner h1{
+    font-size: 140px;
+  }
+  .baner p{
+   font-size: 20px;
+  }
+  .item_gallery{
+    flex-basis: 25%;
+  }
+  .item_about{
+    flex-basis: 23%;
+    padding: 100px 30px;
+  }
+  .item_about:nth-child(4){
+    flex-basis: 31%;
+  }
  }
 @media (min-width:1281px) { 
-  
+  #home{
+    padding: 0px 70px;
+  }
+  .head{
+    margin: 60px 0px;
+  }
+  .about{
+    width: 90vw;
+    margin: 0 auto;
+  }
  }
 
  /*Animation*/

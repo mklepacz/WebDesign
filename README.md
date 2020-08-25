@@ -1,4 +1,7 @@
 # WebDesign-tmpl
-RWD and MobileFirst template
 
-https://mklepacz.github.io/WebDesign-tmpl/
+## RWD and MobileFirst template
+
+## Live
+
+* https://mklepacz.github.io/WebDesign-tmpl/

@@ -1,4 +1,4 @@
-# WebDesign-tmpl
+# WebDesign
 
 ## RWD and MobileFirst template
 

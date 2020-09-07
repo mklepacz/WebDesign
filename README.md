@@ -4,4 +4,4 @@
 
 ## Live
 
-* https://mklepacz.github.io/WebDesign-tmpl/
+* https://mklepacz.github.io/WebDesign
